@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/*
+!data/.gitkeep
+.env
+*.log
+briefing.md

@@ -1,0 +1,30 @@
+name: TerraBrief Morning Briefing
+
+on:
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+
+  briefing:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Download TerraBrief
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run TerraBrief
+        run: python src/main.py

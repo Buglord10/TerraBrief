@@ -1,0 +1,16 @@
+sources:
+
+  - name: BBC News
+    url: https://feeds.bbci.co.uk/news/rss.xml
+
+  - name: BBC UK
+    url: https://feeds.bbci.co.uk/news/uk/rss.xml
+
+  - name: BBC Technology
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+
+  - name: BBC Business
+    url: https://feeds.bbci.co.uk/news/business/rss.xml
+
+  - name: BBC Science
+    url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml

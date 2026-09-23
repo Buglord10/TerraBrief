@@ -1,5 +1,6 @@
 sources:
 
+  # General UK and world news
   - name: BBC News
     url: https://feeds.bbci.co.uk/news/rss.xml
 
@@ -14,3 +15,81 @@ sources:
 
   - name: BBC Science
     url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+
+  - name: The Guardian UK
+    url: https://www.theguardian.com/uk/rss
+
+  - name: The Guardian World
+    url: https://www.theguardian.com/world/rss
+
+  - name: The Guardian Technology
+    url: https://www.theguardian.com/technology/rss
+
+  - name: The Guardian Business
+    url: https://www.theguardian.com/business/rss
+
+  - name: Sky News
+    url: https://feeds.skynews.com/feeds/rss/home.xml
+
+  # Technology and AI
+  - name: Microsoft
+    url: https://blogs.microsoft.com/feed/
+
+  - name: Microsoft AI
+    url: https://blogs.microsoft.com/ai/feed/
+
+  - name: Google
+    url: https://blog.google/rss/
+
+  - name: NVIDIA
+    url: https://blogs.nvidia.com/feed/
+
+  - name: NVIDIA Newsroom
+    url: https://nvidianews.nvidia.com/releases.xml
+
+  - name: OpenAI
+    url: https://openai.com/news/rss.xml
+
+  - name: Anthropic
+    url: https://www.anthropic.com/news/rss.xml
+
+  # Space and science
+  - name: NASA News
+    url: https://www.nasa.gov/rss-feeds/
+
+  - name: NASA JPL
+    url: https://www.jpl.nasa.gov/feeds/news/
+
+  - name: ESA
+    url: https://www.esa.int/rssfeed
+
+  # Aviation
+  - name: EASA
+    url: https://www.easa.europa.eu/newsroom-and-events/news/feed.xml
+
+  - name: EASA Safety
+    url: https://www.easa.europa.eu/newsroom-and-events/safety-information-bulletins/feed.xml
+
+  - name: Met Office News
+    url: https://www.metoffice.gov.uk/weather/guides/rss
+
+  # Formula 1 and motorsport
+  - name: Autosport F1
+    url: https://www.autosport.com/rss/f1/news/
+
+  - name: Motorsport.com F1
+    url: https://www.motorsport.com/rss/f1/news/
+
+  # Gaming
+  - name: Xbox Wire
+    url: https://news.xbox.com/en-us/feed/
+
+  - name: PlayStation Blog
+    url: https://blog.playstation.com/feed/
+
+  - name: Eurogamer
+    url: https://www.eurogamer.net/feed
+
+  # Eurovision and entertainment
+  - name: Eurovision
+    url: https://eurovision.tv/rss

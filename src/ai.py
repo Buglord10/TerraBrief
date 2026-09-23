@@ -4,7 +4,7 @@ import requests
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "openrouter/free"
-MAX_ARTICLES = 50
+MAX_ARTICLES = 35
 REQUEST_TIMEOUT = 180
 
 
@@ -148,9 +148,9 @@ def generate_briefing(articles):
     if not articles:
         return "No relevant articles were found."
 
-    # Keep the AI request manageable. Filtering has already removed irrelevant
-    # stories, so the first 50 relevant articles provide broad coverage while
-    # avoiding an excessively large OpenRouter request.
+    # Use a smaller, recent, filtered article set so the model can spend its
+    # token budget on a long detailed briefing instead of processing stale or
+    # excessive input.
     articles = articles[:MAX_ARTICLES]
 
     print(f"Preparing {len(articles)} articles for OpenRouter...", flush=True)
@@ -171,7 +171,7 @@ SUMMARY: {article.get('summary', '')}
 
     prompt = SYSTEM_PROMPT + """
 
-Here are today's articles:
+Here are today's recent articles:
 
 """ + article_text
 

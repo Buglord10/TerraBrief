@@ -5,7 +5,6 @@ from report import save_report
 
 
 def main():
-
     print("================================")
     print("        TERRABRIEF")
     print("     Morning Briefing AI")
@@ -14,13 +13,11 @@ def main():
 
     print("Step 1: Collecting news...")
     articles = collect_articles()
-
     print(f"Collected {len(articles)} articles.")
 
     print()
     print("Step 2: Filtering articles...")
     articles = filter_articles(articles)
-
     print(f"Found {len(articles)} relevant articles.")
 
     if not articles:
@@ -29,12 +26,10 @@ def main():
 
     print()
     print("Step 3: Asking OpenRouter AI to analyse the news...")
-
     briefing = generate_briefing(articles)
 
     print()
     print("Step 4: Creating report...")
-
     save_report(briefing)
 
     print()

@@ -1,3 +1,8 @@
+window.addEventListener("error", event => {
+  const status = document.getElementById("status");
+  if (status) status.textContent = "Website error: " + (event.error?.message || event.message || "unknown error");
+});
+
 const topics = {
   "UK":["Politics & Government","Economy","Transport","Education","Public Safety"],
   "WORLD":["Europe","North America","Middle East","Asia-Pacific","Africa","International Organisations"],

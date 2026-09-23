@@ -168,6 +168,9 @@ function showSection(section){
   [...briefing.children].forEach(el=>el.style.display="none");
 
   if(section==="all"){
+    // Clear display overrides left by another browse view before applying
+    // the user's topic preferences again.
+    [...briefing.children].forEach(el=>el.style.display="");
     applyPreferences();
     return;
   }

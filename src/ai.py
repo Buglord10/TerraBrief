@@ -183,6 +183,23 @@ def sanitize_briefing(briefing):
     Keep valid content, remove unsupported headings, and discard repeated
     category/subcategory sections so the website always receives a clean report.
     """
+    if briefing is None:
+        raise RuntimeError(
+            "OpenRouter returned no briefing content. "
+            "The selected model returned an empty or null message."
+        )
+
+    if not isinstance(briefing, str):
+        briefing = str(briefing)
+
+    briefing = briefing.strip()
+
+    if not briefing:
+        raise RuntimeError(
+            "OpenRouter returned an empty briefing. "
+            "The selected model returned no usable text."
+        )
+
     lines = briefing.replace("\r\n", "\n").replace("\r", "\n").split("\n")
 
     valid_categories = {name.upper(): name for name in CATEGORIES}
@@ -377,11 +394,23 @@ Here are today's recent articles:
                 data = response.json()
 
                 try:
-                    briefing = data["choices"][0]["message"]["content"]
+                    message = data["choices"][0]["message"]
+                    briefing = message.get("content") if isinstance(message, dict) else None
                 except (KeyError, IndexError, TypeError):
                     raise RuntimeError(
                         f"Unexpected OpenRouter response:\n{data}"
                     )
+
+                if briefing is None or not str(briefing).strip():
+                    last_error = RuntimeError(
+                        f"OpenRouter returned no usable message content:\n{data}"
+                    )
+                    print(f"OpenRouter error: {last_error}", flush=True)
+                    if attempt < MAX_ATTEMPTS:
+                        print("Retrying with a fresh OpenRouter route in 3 seconds...", flush=True)
+                        time.sleep(3)
+                        continue
+                    raise last_error
 
                 briefing = sanitize_briefing(briefing)
                 print("OpenRouter briefing received and structure validated.", flush=True)

@@ -3,54 +3,40 @@ sources:
   # General UK and world news
   - name: BBC News
     url: https://feeds.bbci.co.uk/news/rss.xml
-
   - name: BBC UK
     url: https://feeds.bbci.co.uk/news/uk/rss.xml
-
   - name: BBC Technology
     url: https://feeds.bbci.co.uk/news/technology/rss.xml
-
   - name: BBC Business
     url: https://feeds.bbci.co.uk/news/business/rss.xml
-
   - name: BBC Science
     url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
-
   - name: The Guardian UK
     url: https://www.theguardian.com/uk/rss
-
   - name: The Guardian World
     url: https://www.theguardian.com/world/rss
-
   - name: The Guardian Technology
     url: https://www.theguardian.com/technology/rss
-
   - name: The Guardian Business
     url: https://www.theguardian.com/business/rss
-
   - name: Sky News
     url: https://feeds.skynews.com/feeds/rss/home.xml
 
   # Technology and AI
   - name: Microsoft
     url: https://blogs.microsoft.com/feed/
-
   - name: Google
     url: https://blog.google/rss/
-
   - name: NVIDIA
     url: https://blogs.nvidia.com/feed/
-
   - name: NVIDIA Newsroom
     url: https://nvidianews.nvidia.com/releases.xml
-
   - name: OpenAI
     url: https://openai.com/news/rss.xml
 
   # Space and science
   - name: NASA Breaking News
     url: https://www.nasa.gov/rss/dyn/breaking_news.rss
-
   - name: New Scientist Space
     url: https://www.newscientist.com/subject/space/feed/
 
@@ -61,16 +47,23 @@ sources:
   # Formula 1 and motorsport
   - name: Autosport F1
     url: https://www.autosport.com/rss/f1/news/
-
   - name: Motorsport.com F1
     url: https://www.motorsport.com/rss/f1/news/
 
   # Gaming
   - name: Xbox Wire
     url: https://news.xbox.com/en-us/feed/
-
   - name: PlayStation Blog
     url: https://blog.playstation.com/feed/
-
   - name: Eurogamer
     url: https://www.eurogamer.net/feed
+
+  # Eurovision
+  - name: EurovisionWorld
+    url: https://eurovisionworld.com/feed
+  - name: ESCXTRA
+    url: https://escxtra.com/feed
+  - name: EuroVoix
+    url: https://eurovoix.com/feed
+  - name: Wiwibloggs
+    url: https://wiwibloggs.com/feed

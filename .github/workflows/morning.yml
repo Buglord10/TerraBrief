@@ -14,6 +14,10 @@ on:
   schedule:
     - cron: "0 6 * * *"
 
+concurrency:
+  group: terrabrief-test
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pages: write
@@ -91,7 +95,13 @@ jobs:
           git add -f briefing.md
           git add site/
           git diff --cached --quiet || git commit -m "Add daily TerraBrief briefing"
-          git push
+
+          # The test branch may have received a website/code fix while this
+          # briefing was being generated. Rebase the generated files onto the
+          # newest remote commit before pushing.
+          git fetch origin test
+          git rebase origin/test
+          git push origin HEAD:test
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3

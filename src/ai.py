@@ -1,11 +1,19 @@
 import os
+import time
 import requests
 
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "openrouter/free"
-MAX_ARTICLES = 35
-REQUEST_TIMEOUT = 180
+
+# Keep the AI input small enough for consistent response times while retaining
+# enough articles for a detailed briefing.
+MAX_ARTICLES = 30
+
+# A single slow free-model route should not hold the workflow for several
+# minutes. Failed/time-out requests are retried automatically.
+REQUEST_TIMEOUT = 75
+MAX_ATTEMPTS = 2
 
 
 SYSTEM_PROMPT = """
@@ -148,9 +156,9 @@ def generate_briefing(articles):
     if not articles:
         return "No relevant articles were found."
 
-    # Use a smaller, recent, filtered article set so the model can spend its
-    # token budget on a long detailed briefing instead of processing stale or
-    # excessive input.
+    # The collector already limits articles to the last 48 hours. Limit the AI
+    # input further so the model spends its time generating the briefing rather
+    # than processing excessive input.
     articles = articles[:MAX_ARTICLES]
 
     print(f"Preparing {len(articles)} articles for OpenRouter...", flush=True)
@@ -186,36 +194,75 @@ Here are today's recent articles:
     print(f"Sending request to OpenRouter using {MODEL}...", flush=True)
     print(f"Request contains approximately {len(prompt):,} characters.", flush=True)
 
-    response = requests.post(
-        OPENROUTER_URL,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/Buglord10/TerraBrief",
-            "X-Title": "TerraBrief"
-        },
-        json={
-            "model": MODEL,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.2,
-            "max_tokens": 12000
-        },
-        timeout=REQUEST_TIMEOUT
+    payload = {
+        "model": MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2,
+        "max_tokens": 12000
+    }
+
+    last_error = None
+
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            print(
+                f"OpenRouter attempt {attempt}/{MAX_ATTEMPTS} "
+                f"(timeout: {REQUEST_TIMEOUT}s)...",
+                flush=True
+            )
+
+            response = requests.post(
+                OPENROUTER_URL,
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://github.com/Buglord10/TerraBrief",
+                    "X-Title": "TerraBrief"
+                },
+                json=payload,
+                timeout=REQUEST_TIMEOUT
+            )
+
+            print(
+                f"OpenRouter responded with HTTP {response.status_code}.",
+                flush=True
+            )
+
+            if response.ok:
+                data = response.json()
+
+                try:
+                    briefing = data["choices"][0]["message"]["content"]
+                except (KeyError, IndexError, TypeError):
+                    raise RuntimeError(
+                        f"Unexpected OpenRouter response:\n{data}"
+                    )
+
+                print("OpenRouter briefing received.", flush=True)
+                return briefing
+
+            last_error = RuntimeError(
+                f"OpenRouter returned HTTP {response.status_code}: "
+                f"{response.text[:1000]}"
+            )
+            print(f"OpenRouter error: {last_error}", flush=True)
+
+        except requests.exceptions.Timeout as error:
+            last_error = error
+            print(
+                f"OpenRouter attempt {attempt} timed out after "
+                f"{REQUEST_TIMEOUT} seconds.",
+                flush=True
+            )
+
+        except requests.exceptions.RequestException as error:
+            last_error = error
+            print(f"OpenRouter request failed: {error}", flush=True)
+
+        if attempt < MAX_ATTEMPTS:
+            print("Retrying with a fresh OpenRouter route in 3 seconds...", flush=True)
+            time.sleep(3)
+
+    raise RuntimeError(
+        f"OpenRouter failed after {MAX_ATTEMPTS} attempts: {last_error}"
     )
-
-    print(f"OpenRouter responded with HTTP {response.status_code}.", flush=True)
-
-    if not response.ok:
-        print("OpenRouter error:", flush=True)
-        print(response.text, flush=True)
-        response.raise_for_status()
-
-    data = response.json()
-
-    try:
-        briefing = data["choices"][0]["message"]["content"]
-    except (KeyError, IndexError, TypeError):
-        raise RuntimeError(f"Unexpected OpenRouter response:\n{data}")
-
-    print("OpenRouter briefing received.", flush=True)
-    return briefing

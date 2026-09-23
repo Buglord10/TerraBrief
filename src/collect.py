@@ -4,6 +4,7 @@ from urllib.request import Request, urlopen
 
 
 FEED_TIMEOUT = 10
+MAX_ARTICLES_PER_SOURCE = 50
 
 
 def load_sources():
@@ -38,17 +39,25 @@ def collect_articles():
                 print(f"  Skipped {name}: invalid or empty feed.", flush=True)
                 continue
 
-            count = 0
-            for item in feed.entries:
+            entries = feed.entries[:MAX_ARTICLES_PER_SOURCE]
+
+            for item in entries:
                 articles.append({
                     "source": name,
                     "title": item.get("title", ""),
                     "url": item.get("link", ""),
                     "summary": item.get("summary", "")
                 })
-                count += 1
 
-            print(f"  Added {count} articles.", flush=True)
+            total = len(feed.entries)
+            if total > MAX_ARTICLES_PER_SOURCE:
+                print(
+                    f"  Added {len(entries)} newest articles "
+                    f"(limited from {total}).",
+                    flush=True
+                )
+            else:
+                print(f"  Added {len(entries)} articles.", flush=True)
 
         except Exception as error:
             print(f"  Skipped {name}: {error}", flush=True)

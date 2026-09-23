@@ -2,6 +2,15 @@ name: TerraBrief Morning Briefing
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - test
+    paths-ignore:
+      - "data/**"
+      - "briefing.md"
+      - "site/briefing.md"
+      - "site/data/**"
+      - "site/archive.json"
   schedule:
     - cron: "0 6 * * *"
 

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TerraBrief</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">T</div>
+      <div>
+        <h1>TerraBrief</h1>
+        <p>Morning intelligence briefing</p>
+      </div>
+    </div>
+    <button id="themeToggle" class="icon-button" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <nav class="nav">
+    <button class="nav-item active" data-view="today">Today</button>
+    <button class="nav-item" data-view="archive">Previous briefings</button>
+  </nav>
+
+  <main class="layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-title">Sections</div>
+      <button class="section active" data-section="all">All stories</button>
+      <div id="sectionList"></div>
+    </aside>
+
+    <section class="content">
+      <div id="status" class="status">Loading briefing…</div>
+      <article id="briefing" class="briefing"></article>
+      <section id="archive" class="archive hidden">
+        <div class="page-heading">
+          <h2>Previous briefings</h2>
+          <p>Browse earlier TerraBrief reports.</p>
+        </div>
+        <div id="archiveList"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>TerraBrief · Automatically generated</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

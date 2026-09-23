@@ -68,9 +68,30 @@ async function loadToday(){status.textContent="Loading briefing…";try{const r=
 
 function showSection(section){
   document.querySelectorAll(".section").forEach(b=>b.classList.toggle("active",b.dataset.section===section));
-  applyPreferences();if(section==="all")return;
+  applyPreferences();
+  if(section==="all")return;
+
+  if(section==="TOP STORIES"){
+    [...briefing.querySelectorAll("h1,h2,h3,p,ul,ol")].forEach(x=>x.style.display="none");
+    const top=[...briefing.querySelectorAll("h2")].find(x=>x.textContent.trim().toUpperCase()==="TOP STORIES");
+    if(!top)return;
+    top.style.display="";
+    let n=top.nextElementSibling;
+    while(n&&n.tagName!=="H1"){
+      n.style.display="";
+      n=n.nextElementSibling;
+    }
+    return;
+  }
+
   const h=[...briefing.querySelectorAll("h1")];
-  h.forEach(x=>{const match=x.textContent.trim().toUpperCase()===section;const visible=match&&preferences[section]!==false;x.style.display=visible?"":"none";let n=x.nextElementSibling;while(n&&n.tagName!=="H1"){n.style.display=visible?"":"none";n=n.nextElementSibling}});
+  h.forEach(x=>{
+    const match=x.textContent.trim().toUpperCase()===section;
+    const visible=match&&preferences[section]!==false;
+    x.style.display=visible?"":"none";
+    let n=x.nextElementSibling;
+    while(n&&n.tagName!=="H1"){n.style.display=visible?"":"none";n=n.nextElementSibling}
+  });
 }
 
 async function loadArchive(){try{const r=await fetch("archive.json?"+Date.now()),items=await r.json();$("archiveList").innerHTML=items.map(x=>'<div class="archive-card" data-file="'+x.file+'"><strong>'+x.date+'</strong><span>Open briefing</span></div>').join("");document.querySelectorAll(".archive-card").forEach(card=>card.onclick=async()=>{archive.classList.add("hidden");briefing.classList.remove("hidden");$("sidebar").classList.remove("hidden");status.textContent="Loading…";const r=await fetch("data/"+card.dataset.file);renderMarkdown(await r.text());window.scrollTo({top:0,behavior:"smooth"})})}catch(e){$("archiveList").textContent="No archive available yet."}}

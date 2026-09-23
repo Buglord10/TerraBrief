@@ -81,8 +81,25 @@ sections.forEach(s=>{
   sectionList.appendChild(b);
 });
 
+function markdownToHtml(md){
+  const lines=md.replace(/\r\n?/g,"\n").split("\n");
+  let html=""; let inList=false;
+  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const inline=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\[(.+?)\]\((https?:\/\/[^\s)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  for(const line of lines){
+    if(!line.trim()){ if(inList){html+="</ul>";inList=false;} continue; }
+    if(line.startsWith("# ")) html+="<h1>"+inline(line.slice(2))+"</h1>";
+    else if(line.startsWith("## ")) html+="<h2>"+inline(line.slice(3))+"</h2>";
+    else if(line.startsWith("### ")) html+="<h3>"+inline(line.slice(4))+"</h3>";
+    else if(/^[-*] /.test(line)){if(!inList){html+="<ul>";inList=true;} html+="<li>"+inline(line.slice(2))+"</li>";}
+    else if(/^---+$/.test(line.trim())) html+="<hr>";
+    else {if(inList){html+="</ul>";inList=false;} html+="<p>"+inline(line)+"</p>";}
+  }
+  if(inList)html+="</ul>"; return html;
+}
+
 function renderMarkdown(md){
-  briefing.innerHTML=marked.parse(md,{mangle:false,headerIds:false});
+  briefing.innerHTML=markdownToHtml(md);
   status.textContent="";
   currentView="all";
   applyPreferences();

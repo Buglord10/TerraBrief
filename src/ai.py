@@ -4,6 +4,8 @@ import requests
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "openrouter/free"
+MAX_ARTICLES = 50
+REQUEST_TIMEOUT = 180
 
 
 SYSTEM_PROMPT = """
@@ -146,6 +148,13 @@ def generate_briefing(articles):
     if not articles:
         return "No relevant articles were found."
 
+    # Keep the AI request manageable. Filtering has already removed irrelevant
+    # stories, so the first 50 relevant articles provide broad coverage while
+    # avoiding an excessively large OpenRouter request.
+    articles = articles[:MAX_ARTICLES]
+
+    print(f"Preparing {len(articles)} articles for OpenRouter...", flush=True)
+
     article_text = ""
 
     for article in articles:
@@ -174,6 +183,9 @@ Here are today's articles:
             "Add it as an environment variable or GitHub Actions secret."
         )
 
+    print(f"Sending request to OpenRouter using {MODEL}...", flush=True)
+    print(f"Request contains approximately {len(prompt):,} characters.", flush=True)
+
     response = requests.post(
         OPENROUTER_URL,
         headers={
@@ -188,18 +200,22 @@ Here are today's articles:
             "temperature": 0.2,
             "max_tokens": 12000
         },
-        timeout=600
+        timeout=REQUEST_TIMEOUT
     )
 
+    print(f"OpenRouter responded with HTTP {response.status_code}.", flush=True)
+
     if not response.ok:
-        print("OpenRouter error:")
-        print(response.status_code)
-        print(response.text)
+        print("OpenRouter error:", flush=True)
+        print(response.text, flush=True)
         response.raise_for_status()
 
     data = response.json()
 
     try:
-        return data["choices"][0]["message"]["content"]
+        briefing = data["choices"][0]["message"]["content"]
     except (KeyError, IndexError, TypeError):
         raise RuntimeError(f"Unexpected OpenRouter response:\n{data}")
+
+    print("OpenRouter briefing received.", flush=True)
+    return briefing

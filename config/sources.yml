@@ -54,8 +54,8 @@ sources:
     url: https://www.anthropic.com/news/rss.xml
 
   # Space and science
-  - name: NASA News
-    url: https://www.nasa.gov/rss-feeds/
+  - name: NASA Breaking News
+    url: https://www.nasa.gov/rss/dyn/breaking_news.rss
 
   - name: NASA JPL
     url: https://www.jpl.nasa.gov/feeds/news/
@@ -63,15 +63,15 @@ sources:
   - name: ESA
     url: https://www.esa.int/rssfeed
 
+  - name: Scientific American
+    url: https://rss.sciam.com/ScientificAmerican-Global
+
+  - name: New Scientist Space
+    url: https://www.newscientist.com/subject/space/feed/
+
   # Aviation
   - name: EASA
     url: https://www.easa.europa.eu/newsroom-and-events/news/feed.xml
-
-  - name: EASA Safety
-    url: https://www.easa.europa.eu/newsroom-and-events/safety-information-bulletins/feed.xml
-
-  - name: Met Office News
-    url: https://www.metoffice.gov.uk/weather/guides/rss
 
   # Formula 1 and motorsport
   - name: Autosport F1

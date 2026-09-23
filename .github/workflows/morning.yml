@@ -24,6 +24,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Test OpenRouter AI connection
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python src/test_ai.py
+
       - name: Run TerraBrief
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

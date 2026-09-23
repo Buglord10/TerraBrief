@@ -68,7 +68,7 @@ function buildPreferences(){
     const group=document.createElement("div");
     group.className="preference-group";
     group.appendChild(addPreference(s,s));
-    topics[s].forEach(x=>group.appendChild(addPreference(s+"::"+x,x,true,s));
+    topics[s].forEach(x=>group.appendChild(addPreference(s+"::"+x,x,true,s)));
     preferenceList.appendChild(group);
   });
 }

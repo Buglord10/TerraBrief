@@ -218,27 +218,38 @@ async function loadToday(){
 }
 
 async function loadArchive(){
+  const list=$("archiveList");
+  list.textContent="Loading previous briefings…";
+
   try{
     const r=await fetch("archive.json?"+Date.now(),{cache:"no-store"});
-    if(!r.ok)throw Error();
+    if(!r.ok)throw Error("archive index unavailable");
     const items=await r.json();
 
-    $("archiveList").innerHTML=items.map(x=>
-      '<div class="archive-card" data-file="'+x.file+'"><strong>'+x.date+
-      '</strong><span>Open briefing</span></div>'
+    if(!Array.isArray(items)||items.length===0){
+      list.textContent="No previous briefings available yet.";
+      return;
+    }
+
+    list.innerHTML=items.map(x=>
+      '<div class="archive-card" data-file="'+encodeURIComponent(x.file)+'">'+
+      '<strong>'+x.date+'</strong><span>Open briefing</span></div>'
     ).join("");
 
-    document.querySelectorAll(".archive-card").forEach(card=>{
+    list.querySelectorAll(".archive-card").forEach(card=>{
       card.onclick=async()=>{
-        archive.classList.add("hidden");
-        briefing.classList.remove("hidden");
-        $("sidebar").classList.remove("hidden");
-        status.textContent="Loading…";
+        const file=decodeURIComponent(card.dataset.file);
+        status.textContent="Loading briefing…";
 
         try{
-          const r=await fetch("data/"+encodeURIComponent(card.dataset.file)+"?"+Date.now(),{cache:"no-store"});
-          if(!r.ok)throw Error();
-          renderMarkdown(await r.text());
+          const r=await fetch("data/"+encodeURIComponent(file)+"?"+Date.now(),{cache:"no-store"});
+          if(!r.ok)throw Error("briefing unavailable");
+          const md=await r.text();
+
+          archive.classList.add("hidden");
+          briefing.classList.remove("hidden");
+          $("sidebar").classList.remove("hidden");
+          renderMarkdown(md);
           window.scrollTo({top:0,behavior:"smooth"});
         }catch(e){
           status.textContent="Could not load this briefing.";
@@ -246,7 +257,7 @@ async function loadArchive(){
       };
     });
   }catch(e){
-    $("archiveList").textContent="No archive available yet.";
+    list.textContent="Could not load the previous briefings.";
   }
 }
 

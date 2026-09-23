@@ -8,8 +8,8 @@ def load_topics():
 
 def find_category(article):
     text = (
-        article.get("title", "") + " " +
-        article.get("summary", "")
+        str(article.get("title", "")) + " " +
+        str(article.get("summary", ""))
     ).lower()
 
     topics = load_topics()
@@ -17,7 +17,9 @@ def find_category(article):
     for category_name, category in topics.items():
         for subcategory_name, keywords in category["subtopics"].items():
             for keyword in keywords:
-                if keyword.lower() in text:
+                # YAML interprets keywords such as 737, 747 and 777 as integers.
+                # Convert every keyword to a string before doing the comparison.
+                if str(keyword).lower() in text:
                     return category_name, subcategory_name
 
     return None, None
@@ -33,7 +35,7 @@ def filter_articles(articles):
         if not category:
             continue
 
-        title = article.get("title", "").strip().lower()
+        title = str(article.get("title", "")).strip().lower()
 
         if title in seen:
             continue

@@ -28,11 +28,13 @@ def main():
         return
 
     print()
-    print("Step 3: Asking AI to analyse the news...")
+    print("Step 3: Asking OpenRouter AI to analyse the news...")
+
     briefing = generate_briefing(articles)
 
     print()
     print("Step 4: Creating report...")
+
     save_report(briefing)
 
     print()

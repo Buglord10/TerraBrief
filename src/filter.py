@@ -2,40 +2,56 @@ import yaml
 
 
 def load_topics():
+
     with open("config/topics.yml", "r", encoding="utf-8") as file:
         return yaml.safe_load(file)["topics"]
 
 
 def find_category(article):
+
     text = (
-        article["title"] + " " +
-        article["summary"]
+        article.get("title", "") + " " +
+        article.get("summary", "")
     ).lower()
 
     topics = load_topics()
 
     for category_name, category in topics.items():
 
-        for keyword in category["topics"]:
+        for subcategory_name, keywords in category["subtopics"].items():
 
-            if keyword.lower() in text:
-                return category_name
+            for keyword in keywords:
 
-    return None
+                if keyword.lower() in text:
+
+                    return category_name, subcategory_name
+
+    return None, None
 
 
 def filter_articles(articles):
 
     filtered = []
 
+    seen = set()
+
     for article in articles:
 
-        category = find_category(article)
+        category, subcategory = find_category(article)
 
-        if category:
+        if not category:
+            continue
 
-            article["category"] = category
+        title = article.get("title", "").strip().lower()
 
-            filtered.append(article)
+        if title in seen:
+            continue
+
+        seen.add(title)
+
+        article["category"] = category
+        article["subcategory"] = subcategory
+
+        filtered.append(article)
 
     return filtered

@@ -2,71 +2,377 @@ topics:
 
   UK:
     priority: high
-    topics:
-      - United Kingdom
-      - UK government
-      - Britain
-      - British economy
-      - UK economy
-      - England
-      - Scotland
-      - Wales
-      - Northern Ireland
+    subtopics:
+      Politics & Government:
+        - UK government
+        - British government
+        - Prime Minister
+        - Parliament
+        - Westminster
+        - Labour
+        - Conservative
+        - Liberal Democrats
+        - Reform UK
+        - election
+        - elections
+        - MP
+        - minister
+        - government
+      Economy:
+        - UK economy
+        - British economy
+        - Bank of England
+        - inflation
+        - interest rates
+        - pound
+        - sterling
+        - GDP
+        - unemployment
+      Transport:
+        - UK transport
+        - railway
+        - railways
+        - train
+        - trains
+        - National Rail
+        - TfL
+        - Heathrow
+        - Gatwick
+        - road
+        - motorway
+      Education:
+        - UK schools
+        - British schools
+        - university
+        - universities
+        - GCSE
+        - A-level
+        - Ofsted
+        - education
+      Public Safety:
+        - UK police
+        - British police
+        - crime
+        - terrorism
+        - fire
+        - emergency
+        - public safety
 
   World:
     priority: high
-    topics:
-      - international
-      - world news
-      - geopolitics
-      - international relations
-      - United Nations
-      - NATO
-      - European Union
+    subtopics:
+      Europe:
+        - Europe
+        - European Union
+        - EU
+        - France
+        - Germany
+        - Spain
+        - Italy
+        - Ukraine
+        - Russia
+      North America:
+        - United States
+        - US
+        - America
+        - Canada
+        - Mexico
+      Middle East:
+        - Middle East
+        - Israel
+        - Gaza
+        - Palestine
+        - Iran
+        - Iraq
+        - Syria
+        - Lebanon
+      Asia-Pacific:
+        - Asia
+        - China
+        - Japan
+        - India
+        - Australia
+        - South Korea
+        - Taiwan
+      Africa:
+        - Africa
+        - South Africa
+        - Nigeria
+        - Kenya
+        - Egypt
+      International Organisations:
+        - United Nations
+        - NATO
+        - World Health Organization
+        - WHO
+        - IMF
+        - World Bank
+        - international relations
+        - geopolitics
 
   Technology:
     priority: medium
-    topics:
-      - artificial intelligence
-      - AI
-      - Microsoft
-      - Apple
-      - Google
-      - OpenAI
-      - Nvidia
-      - SpaceX
-      - technology
+    subtopics:
+      Artificial Intelligence:
+        - artificial intelligence
+        - AI
+        - OpenAI
+        - ChatGPT
+        - Anthropic
+        - Gemini
+        - Claude
+        - Llama
+      Microsoft:
+        - Microsoft
+        - Windows
+        - Xbox
+        - Azure
+      Apple:
+        - Apple
+        - iPhone
+        - iPad
+        - Mac
+        - macOS
+      Google:
+        - Google
+        - Android
+        - Chrome
+        - Gemini
+      Nvidia:
+        - Nvidia
+        - GeForce
+        - RTX
+      Space:
+        - SpaceX
+        - NASA
+        - rocket
+        - satellite
+        - spacecraft
+        - spaceflight
+      Cybersecurity:
+        - cybersecurity
+        - cyberattack
+        - cyber attack
+        - ransomware
+        - hacking
+        - data breach
+      General Technology:
+        - technology
+        - tech
+        - semiconductor
+        - software
 
   Aviation:
     priority: high
-    topics:
-      - aviation
-      - airline
-      - airlines
-      - aircraft
-      - Airbus
-      - Boeing
-      - airport
-      - aviation safety
-      - pilot
-      - flight
+    subtopics:
+      Airlines:
+        - airline
+        - airlines
+        - British Airways
+        - easyJet
+        - Ryanair
+        - Emirates
+        - Lufthansa
+      Aircraft:
+        - aircraft
+        - Airbus
+        - Boeing
+        - A320
+        - A330
+        - A350
+        - A380
+        - 737
+        - 747
+        - 777
+        - 787
+      Airports:
+        - airport
+        - Heathrow
+        - Gatwick
+        - Manchester Airport
+        - Frankfurt Airport
+        - Charles de Gaulle
+      Safety:
+        - aviation safety
+        - plane crash
+        - aircraft accident
+        - aviation incident
+        - pilot
+        - flight safety
+      Aviation Industry:
+        - aviation industry
+        - aviation
+        - air travel
+        - flight
 
   Formula 1:
     priority: high
-    topics:
-      - Formula 1
-      - F1
-      - FIA
-      - Grand Prix
-      - F1 driver
-      - F1 team
+    subtopics:
+      Race Weekend:
+        - Formula 1
+        - F1
+        - Grand Prix
+        - qualifying
+        - pole position
+        - sprint
+      Teams:
+        - Ferrari
+        - Mercedes F1
+        - Red Bull Racing
+        - McLaren F1
+        - Aston Martin F1
+        - Williams F1
+        - Alpine F1
+        - Haas F1
+        - Racing Bulls
+        - Audi F1
+      Drivers:
+        - Max Verstappen
+        - Lando Norris
+        - Charles Leclerc
+        - Lewis Hamilton
+        - George Russell
+        - Oscar Piastri
+        - Fernando Alonso
+        - F1 driver
+      Technical:
+        - F1 car
+        - Formula 1 car
+        - aerodynamics
+        - downforce
+        - F1 technical
+        - F1 upgrade
+      F1 Business:
+        - F1 business
+        - Formula 1 ownership
+        - F1 sponsorship
+        - FIA
 
   Gaming:
     priority: medium
-    topics:
-      - Minecraft
-      - Xbox
-      - PlayStation
-      - gaming
-      - video game
-      - PC gaming
+    subtopics:
+      Minecraft:
+        - Minecraft
+        - Mojang
+        - Bedrock
+        - Java Edition
+      Xbox:
+        - Xbox
+        - Xbox Game Pass
+        - Microsoft Gaming
+      PlayStation:
+        - PlayStation
+        - PS5
+        - PS6
+      PC Gaming:
+        - PC gaming
+        - Steam
+        - Epic Games
+        - graphics card
+      Nintendo:
+        - Nintendo
+        - Switch
+        - Switch 2
+      Releases:
+        - video game
+        - video games
+        - game release
+        - gaming
+
+  Science:
+    priority: medium
+    subtopics:
+      Space:
+        - astronomy
+        - astrophysics
+        - telescope
+        - exoplanet
+        - galaxy
+        - black hole
+      Physics:
+        - physics
+        - particle physics
+        - quantum
+        - CERN
+      Biology:
+        - biology
+        - genetics
+        - DNA
+        - species
+        - wildlife
+      Climate:
+        - climate change
+        - global warming
+        - greenhouse gas
+      Environment:
+        - environment
+        - biodiversity
+        - conservation
+        - pollution
+
+  Business:
+    priority: medium
+    subtopics:
+      Markets:
+        - stock market
+        - stocks
+        - shares
+        - FTSE
+        - Nasdaq
+        - Dow Jones
+      Companies:
+        - company
+        - companies
+        - corporate
+        - merger
+        - acquisition
+      Finance:
+        - finance
+        - banking
+        - investment
+        - investor
+        - bonds
+      Energy:
+        - oil
+        - gas
+        - energy
+        - renewable energy
+        - electricity
+
+  Entertainment:
+    priority: low
+    subtopics:
+      Film & TV:
+        - film
+        - movie
+        - cinema
+        - Netflix
+        - television
+        - TV
+      Music:
+        - music
+        - singer
+        - album
+        - concert
+        - musician
+      Eurovision:
+        - Eurovision
+        - Eurovision Song Contest
+        - Eurovision Song Contest 2026
+        - Eurovision 2026
+        - Eurovision winner
+        - Eurovision final
+        - Eurovision semi-final
+        - Eurovision entry
+        - Eurovision entries
+      Theme Parks:
+        - theme park
+        - roller coaster
+        - Disneyland
+        - Universal
+        - Europa-Park
+      Events:
+        - festival
+        - event
+        - awards
+        - ceremony

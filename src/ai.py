@@ -1,4 +1,5 @@
 import os
+import re
 import time
 import requests
 
@@ -15,6 +16,18 @@ MAX_ARTICLES = 30
 REQUEST_TIMEOUT = 75
 MAX_ATTEMPTS = 2
 
+
+CATEGORIES = {
+    "UK": ["Politics & Government", "Economy", "Transport", "Education", "Public Safety"],
+    "WORLD": ["Europe", "North America", "Middle East", "Asia-Pacific", "Africa", "International Organisations"],
+    "TECHNOLOGY": ["Artificial Intelligence", "Microsoft", "Apple", "Google", "Nvidia", "Space", "Cybersecurity"],
+    "AVIATION": ["Airlines", "Aircraft", "Airports", "Safety", "Aviation Industry"],
+    "FORMULA 1": ["Race Weekend", "Teams", "Drivers", "Technical", "F1 Business"],
+    "GAMING": ["Minecraft", "Xbox", "PlayStation", "PC Gaming", "Nintendo", "Releases"],
+    "SCIENCE": ["Space", "Physics", "Biology", "Climate", "Environment"],
+    "BUSINESS": ["Markets", "Companies", "Finance", "Energy"],
+    "ENTERTAINMENT": ["Film & TV", "Music", "Eurovision", "Theme Parks", "Events"],
+}
 
 SYSTEM_PROMPT = """
 You are TerraBrief, a personal morning intelligence briefing assistant.
@@ -40,11 +53,101 @@ IMPORTANT RULES:
 14. Do not make political recommendations or tell the reader what political
     choice they should make.
 
-BRIEFING STRUCTURE:
+STRICT OUTPUT FORMAT:
+
+The report MUST contain these headings and ONLY these headings:
 
 # TERRABRIEF
-
 ## TOP STORIES
+
+Then use only these category headings when they contain relevant stories:
+
+# UK
+# WORLD
+# TECHNOLOGY
+# AVIATION
+# FORMULA 1
+# GAMING
+# SCIENCE
+# BUSINESS
+# ENTERTAINMENT
+
+Within a category, use ONLY its matching subcategory headings:
+
+UK:
+## Politics & Government
+## Economy
+## Transport
+## Education
+## Public Safety
+
+WORLD:
+## Europe
+## North America
+## Middle East
+## Asia-Pacific
+## Africa
+## International Organisations
+
+TECHNOLOGY:
+## Artificial Intelligence
+## Microsoft
+## Apple
+## Google
+## Nvidia
+## Space
+## Cybersecurity
+
+AVIATION:
+## Airlines
+## Aircraft
+## Airports
+## Safety
+## Aviation Industry
+
+FORMULA 1:
+## Race Weekend
+## Teams
+## Drivers
+## Technical
+## F1 Business
+
+GAMING:
+## Minecraft
+## Xbox
+## PlayStation
+## PC Gaming
+## Nintendo
+## Releases
+
+SCIENCE:
+## Space
+## Physics
+## Biology
+## Climate
+## Environment
+
+BUSINESS:
+## Markets
+## Companies
+## Finance
+## Energy
+
+ENTERTAINMENT:
+## Film & TV
+## Music
+## Eurovision
+## Theme Parks
+## Events
+
+Do NOT create any other #, ## or ### headings.
+Do NOT repeat a category or subcategory.
+Do NOT create standalone headings such as "HEALTH", "SPACE", "TRANSPORT",
+"POLITICS & GOVERNMENT", "EUROVISION", etc. outside their parent category.
+Do NOT create a second copy of a story merely because it fits multiple topics.
+A story belongs in the single most appropriate category and subcategory.
+
+TOP STORIES:
 
 Select approximately 5-10 of the most significant stories across all topics.
 
@@ -62,94 +165,136 @@ For each:
 
 **Sources:** List the relevant source names and URLs.
 
-Then organise the rest of the briefing using these categories and subcategories:
-
-# UK
-## Politics & Government
-## Economy
-## Transport
-## Education
-## Public Safety
-
-# WORLD
-## Europe
-## North America
-## Middle East
-## Asia-Pacific
-## Africa
-## International Organisations
-
-# TECHNOLOGY
-## Artificial Intelligence
-## Microsoft
-## Apple
-## Google
-## Nvidia
-## Space
-## Cybersecurity
-
-# AVIATION
-## Airlines
-## Aircraft
-## Airports
-## Safety
-## Aviation Industry
-
-# FORMULA 1
-## Race Weekend
-## Teams
-## Drivers
-## Technical
-## F1 Business
-
-# GAMING
-## Minecraft
-## Xbox
-## PlayStation
-## PC Gaming
-## Nintendo
-## Releases
-
-# SCIENCE
-## Space
-## Physics
-## Biology
-## Climate
-## Environment
-
-# BUSINESS
-## Markets
-## Companies
-## Finance
-## Energy
-
-# ENTERTAINMENT
-## Film & TV
-## Music
-## Eurovision
-## Theme Parks
-## Events
-
-Only include subcategories with genuinely relevant stories.
-
-For each significant story use:
-
-### Headline
-
-**What happened:** Detailed explanation.
-
-**Key details:** Important facts from the supplied sources.
-
-**Why it matters:** Explain the significance.
-
-**What happens next:** Only when supported by the sources.
-
-**Sources:** Source names and URLs.
+For category sections, use the same story format. Only include subcategories
+with genuinely relevant stories.
 
 Do not write a generic conclusion.
 
-The final briefing should feel like a professional morning intelligence briefing rather than a simple list of RSS articles.
+The final briefing should feel like a professional morning intelligence briefing
+rather than a simple list of RSS articles.
 """
+
+
+def sanitize_briefing(briefing):
+    """
+    Enforce TerraBrief's document structure after generation.
+
+    Free models can occasionally invent extra headings or repeat sections.
+    Keep valid content, remove unsupported headings, and discard repeated
+    category/subcategory sections so the website always receives a clean report.
+    """
+    lines = briefing.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+
+    valid_categories = {name.upper(): name for name in CATEGORIES}
+    valid_subcategories = {
+        sub.upper(): sub
+        for subs in CATEGORIES.values()
+        for sub in subs
+    }
+
+    output = []
+    seen_categories = set()
+    seen_subcategories = set()
+    current_category = None
+    current_subcategory = None
+    skipping_duplicate = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        if stripped.startswith("# ") and not stripped.startswith("## "):
+            heading = stripped[2:].strip()
+            key = heading.upper()
+
+            if key == "TERRABRIEF":
+                output.append("# TERRABRIEF")
+                current_category = None
+                current_subcategory = None
+                skipping_duplicate = False
+                continue
+
+            if key in valid_categories:
+                category = valid_categories[key]
+                if category.upper() in seen_categories:
+                    skipping_duplicate = True
+                    current_category = category
+                    current_subcategory = None
+                    continue
+
+                seen_categories.add(category.upper())
+                output.append(f"# {category}")
+                current_category = category
+                current_subcategory = None
+                skipping_duplicate = False
+                continue
+
+            # Unknown top-level heading: ignore it and its following content.
+            skipping_duplicate = True
+            current_category = None
+            current_subcategory = None
+            continue
+
+        if stripped.startswith("## "):
+            heading = stripped[3:].strip()
+            key = heading.upper()
+
+            if key == "TOP STORIES":
+                if "TOP STORIES" in seen_subcategories:
+                    skipping_duplicate = True
+                else:
+                    seen_subcategories.add("TOP STORIES")
+                    output.append("## TOP STORIES")
+                    current_category = None
+                    current_subcategory = "TOP STORIES"
+                    skipping_duplicate = False
+                continue
+
+            if current_category and key in {
+                sub.upper() for sub in CATEGORIES[current_category]
+            }:
+                subcategory = valid_subcategories[key]
+                unique_key = f"{current_category.upper()}::{subcategory.upper()}"
+
+                if unique_key in seen_subcategories:
+                    skipping_duplicate = True
+                    current_subcategory = subcategory
+                    continue
+
+                seen_subcategories.add(unique_key)
+                output.append(f"## {subcategory}")
+                current_subcategory = subcategory
+                skipping_duplicate = False
+                continue
+
+            # A known subcategory in the wrong place, or an unsupported heading.
+            skipping_duplicate = True
+            current_subcategory = None
+            continue
+
+        if stripped.startswith("### "):
+            # Story headings are allowed only inside TOP STORIES or a valid
+            # category/subcategory section.
+            if current_subcategory:
+                if not skipping_duplicate:
+                    output.append(line)
+            continue
+
+        if not skipping_duplicate:
+            output.append(line)
+
+    # Remove excessive blank lines while preserving readable paragraph spacing.
+    cleaned = []
+    blank = False
+    for line in output:
+        if not line.strip():
+            if not blank:
+                cleaned.append("")
+            blank = True
+        else:
+            cleaned.append(line)
+            blank = False
+
+    return "\n".join(cleaned).strip()
 
 
 def generate_briefing(articles):
@@ -238,7 +383,8 @@ Here are today's recent articles:
                         f"Unexpected OpenRouter response:\n{data}"
                     )
 
-                print("OpenRouter briefing received.", flush=True)
+                briefing = sanitize_briefing(briefing)
+                print("OpenRouter briefing received and structure validated.", flush=True)
                 return briefing
 
             last_error = RuntimeError(

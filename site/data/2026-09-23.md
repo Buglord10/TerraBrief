@@ -6,156 +6,154 @@
 
 # TERRABRIEF
 ## TOP STORIES
-### UK military jamming other nations' satellites to defend itself, BBC told
-**What happened:** The head of the RAF warned that the UK faces “unprecedented threats” from adversaries in space and said a new unit has been created to defend Britain’s satellites, including the use of jamming against other nations’ satellites as a defensive measure.  
-**Key details:** RAF chief (unnamed), new space defence unit, unprecedented threats, defensive satellite jamming.  
-**Why it matters:** Highlights the growing militarisation of space and the UK’s need to protect its orbital assets, raising the risk of escalation in space‑based conflict.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c32l8y8kygdvo?at_medium=RSS&at_campaign=rss  
-
-### UK to review Chagos Islands deal over lack of US support, Streeting tells BBC
-**What happened:** Defence Secretary Wes Streeting confirmed the UK will review its agreement to hand over the Chagos Islands to Mauritius after US President Donald Trump called the deal “terrible” and signalled a lack of US backing.  
-**Key details:** Wes Streeting, Donald Trump’s criticism, review of the Chagos Islands sovereignty transfer, strategic Diego Garcia base.  
-**Why it matters:** Affects UK overseas territory policy, US‑UK relations, and the future of the future of the vital military base on Diego Garcia and international law regarding decolonisation.  
-**What happens next:** The review is underway; no timetable for conclusion was given.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/ck3wjy3pdwdno?at_medium=RSS&at_campaign=rss; BBC News (video) – https://www.bbc.co.uk/news/videos/cqdr74vn85ndo?at_medium=RSS&at_campaign=rss  
-
-### Watch: Trump and Xi are meeting on US soil - what's on their agenda?
-**What happened:** Former President Donald Trump and Chinese President Xi Jinping are meeting in Washington DC to discuss a range of bilateral issues.  
-**Key details:** Meeting location Washington DC, agenda includes trade imbalances, Taiwan, Ukraine war, technology transfer, and broader strategic competition.  
-**Why it matters:** The outcome could shape global trade flows, security dynamics in Indo‑Pacific, and set the tone for US‑China relations ahead of the next election cycle.  
-**What happens next:** Not specified in the video.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/videos/c38xk275jd21o?at_medium=RSS&at_campaign=rss  
-
-### Iran's president tells Trump it will never 'bend the knee'
-**What happened:** Iranian President Masoud Pezeshkian delivered a defiant speech at the United Nations, rejecting US President Donald Trump’s threat to “annihilate” Iran if a peace deal is not reached.  
-**Key details:** Masoud Pezeshkian, UN speech, Trump’s annihilation threat, refusal to concede.  
-**Why it matters:** Heightens tensions between the US and Iran, raising the risk of further escalation in the Middle East and impacting global oil markets and diplomatic efforts.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss  
-
-### Harvey Weinstein sentenced to 15 years in prison for sexual assault
-**What happened:** Film producer Harvey Weinstein was sentenced to 15 years imprisonment after being convicted of sexual assault.  
-**Key details:** Harvey Weinstein, 15‑year sentence, victim Miriam Haley’s statement about the assault’s lasting impact.  
-**Why it matters:** Represents a significant milestone in the #MeToo movement, demonstrating that powerful individuals can face serious legal consequences for sexual misconduct.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cm98626n260yo?at_medium=RSS&at_campaign=rss  
-
-### Europe's car makers are in crisis. Will the threat of war rescue them?
-**What happened:** Auto executives across Europe warned that the industry is in crisis, but hope that increased rearmament and defence spending could revive manufacturing capacity.  
-**Key details:** European car makers, crisis, rearmament as potential stimulus, industrial muscle‑flexing.  
-**Why it matters:** Links defence expenditure to economic recovery, signalling vulnerability of Europe’s automotive sector and the possible role of military budgets in industrial policy.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&at_campaign=rss  
-
-### UK warned over ballooning debt costs and slower growth ahead of Budget
-**What happened:** Analysts warned that higher energy prices driven by the Middle East conflict and climate change will increase the UK’s debt servicing costs and slow economic growth.  
-**Key details:** Higher energy prices, Middle East conflict, climate impact, rising debt costs, growth slowdown.  
-**Why it matters:** Presents a fiscal challenge for the upcoming Budget, potentially limiting public spending or necessitating tax adjustments.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c607ly09y7rlo?at_medium=RSS&at_campaign=rss  
-
-### Man Utd still £1bn in debt with £63.5m spent on new stadium
-**What happened:** Manchester United’s net debt remains above £1 billion despite cost‑cutting measures, while the club has spent £63.5 million acquiring land for a proposed new stadium.  
-**Key details:** Debt >£1 bn, £63.5 m land purchase, Sir Jim Ratcliffe’s cost‑cutting programme.  
-**Why it matters:** Highlights the financial strain on one of the world’s biggest football clubs, affecting its ability to invest in players and infrastructure.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/sport/football/articles/c5evwlmdmy00o?at_medium=RSS&at_campaign=rss  
-
-### Admiral insurance firm to cut 500 jobs in the UK
-**What happened:** Admiral announced plans to cut approximately 500 jobs, about 5 % of its UK insurance workforce, as part of a cost‑saving initiative.  
-**Key details:** 500 job cuts, 5 % of UK insurance workforce, Admiral’s UK business.  
-**Why it matters:** Reflects ongoing pressures in the UK insurance sector and could affect local employment and service capacity.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC UK – https://www.bbc.co.uk/news/articles/c68xk2n2ee88o?at_medium=RSS&at_campaign=rss  
-
-### RAF jet crash in Anglesey – pilots eject with minor injuries
-**What happened:** Two pilots ejected from an RAF T2 Hawk aircraft before it crashed near Anglesey, North Wales; both sustained only minor injuries.  
-**Key details:** RAF T2 Hawk, Anglesey (North Wales), pilot ejection, minor injuries, North Wales Police attending.  
-**Why it matters:** Underscores the risks associated with military training flights and prompts scrutiny of flight safety procedures.  
-**What happens next:** Not specified in the sources.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/videos/c6wyz0zlx10qo?at_medium=RSS&at_campaign=rss; BBC UK – https://www.bbc.co.uk/news/articles/cq62k1947l7po?at_medium=RSS&at_campaign=rss  
-
-# UK
-## Politics & Government
-### UK to review Chagos Islands deal over lack of US support, Streeting tells BBC
-**What happened:** Defence Secretary Wes Streeting confirmed the UK will review its agreement to hand over the Chagos Islands to Mauritius after US President Donald Trump called the deal “terrible” and signalled a lack of US backing.  
-**Key details:** Wes Streeting, Donald Trump’s criticism, review of the Chagos Islands sovereignty transfer, strategic Diego Garcia base.  
-**Why it matters:** Affects UK overseas territory policy, US‑UK relations, and the future of the vital military base on Diego Garcia and international law regarding decolonisation.  
-**What happens next:** The review is underway; no timetable for conclusion was given.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/ck3wjy3pdwdno?at_medium=RSS&at_campaign=rss; BBC News (video) – https://www.bbc.co.uk/news/videos/cqdr74vn85ndo?at_medium=RSS&at_campaign=rss  
-
-### Iran's president tells Trump it will never 'bend the knee'
-**What happened:** Iranian President Masoud Pezeshkian delivered a defiant speech at the United Nations, rejecting US President Donald Trump’s threat to “annihilate” Iran if a peace deal is not reached.  
-**Key details:** Masoud Pezeshkian, UN speech, Trump’s annihilation threat, refusal to concede.  
-**Why it matters:** Heightens tensions between the US and Iran, raising the risk of further escalation in the Middle East and impacting global oil markets and diplomatic efforts.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss  
-
-## Transport
-### RAF jet crash in Anglesey – pilots eject with minor injuries
-**What happened:** Two pilots ejected from an RAF T2 Hawk aircraft before it crashed near Anglesey, North Wales; both sustained only minor injuries.  
-**Key details:** RAF T2 Hawk, Anglesey (North Wales), pilot ejection, minor injuries, North Wales Police attending.  
-**Why it matters:** Underscores the risks associated with military training flights and prompts scrutiny of flight safety procedures.  
-**What happens next:** Not specified in the sources.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/videos/c6wyz0zlx10qo?at_medium=RSS&at_campaign=rss; BBC UK – https://www.bbc.co.uk/news/articles/cq62k1947l7po?at_medium=RSS&at_campaign=rss  
-
-# WORLD
-## North America
-### Admiral insurance firm to cut 500 jobs in the UK
-**What happened:** Admiral announced plans to cut approximately 500 jobs, about 5 % of its UK insurance workforce, as part of a cost‑saving initiative.  
-**Key details:** 500 job cuts, 5 % of UK insurance workforce, Admiral’s UK business.  
-**Why it matters:** Reflects ongoing pressures in the UK insurance sector and could affect local employment and service capacity.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC UK – https://www.bbc.co.uk/news/articles/c68xk2n2ee88o?at_medium=RSS&at_campaign=rss  
-
-## Europe
-### Europe's car makers are in crisis. Will the threat of war rescue them?
-**What happened:** Auto executives across Europe warned that the industry is in crisis, but hope that increased rearmament and defence spending could revive manufacturing capacity.  
-**Key details:** European car makers, crisis, rearmament as potential stimulus, industrial muscle‑flexing.  
-**Why it matters:** Links defence expenditure to economic recovery, signalling vulnerability of Europe’s automotive sector and the possible role of military budgets in industrial policy.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&at_campaign=rss  
-
-## Middle East
-### UK warned over ballooning debt costs and slower growth ahead of Budget
-**What happened:** Analysts warned that higher energy prices driven by the Middle East conflict and climate change will increase the UK’s debt servicing costs and slow economic growth.  
-**Key details:** Higher energy prices, Middle East conflict, climate impact, rising debt costs, growth slowdown.  
-**Why it matters:** Presents a fiscal challenge for the upcoming Budget, potentially limiting public spending or necessitating tax adjustments.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c607ly09y7rlo?at_medium=RSS&at_campaign=rss  
-
-## International Organisations
-*(No stories placed here after deduplication; the selected top stories do not include any from this subcategory.)*  
 
 # TECHNOLOGY
 ## Artificial Intelligence
-### UK military jamming other nations' satellites to defend itself, BBC told
-**What happened:** The head of the RAF warned that the UK faces “unprecedented threats” from adversaries in space and said a new unit has been created to defend Britain’s satellites, including the use of jamming against other nations’ satellites as a defensive measure.  
-**Key details:** RAF chief (unnamed), new space defence unit, unprecedented threats, defensive satellite jamming.  
-**Why it matters:** Highlights the growing militarisation of space and the UK’s need to protect its orbital assets, raising the risk of escalation in space‑based conflict.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c32l8y8kygdvo?at_medium=RSS&at_campaign=rss  
 
-### Harvey Weinstein sentenced to 15 years in prison for sexual assault
-**What happened:** Film producer Harvey Weinstein was sentenced to 15 years imprisonment after being convicted of sexual assault.  
-**Key details:** Harvey Weinstein, 15‑year sentence, victim Miriam Haley’s statement about the assault’s lasting impact.  
-**Why it matters:** Represents a significant milestone in the #MeToo movement, demonstrating that powerful individuals can face serious legal consequences for sexual misconduct.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cm98626n260yo?at_medium=RSS&at_campaign=rss  
+### UK military says it is jamming other nations' satellites to defend itself
 
-### Man Utd still £1bn in debt with £63.5m spent on new stadium
-**What happened:** Manchester United’s net debt remains above £1 billion despite cost‑cutting measures, while the club has spent £63.5 million acquiring land for a proposed new stadium.  
-**Key details:** Debt >£1 bn, £63.5 m land purchase, Sir Jim Ratcliffe’s cost‑cutting programme.  
-**Why it matters:** Highlights the financial strain on one of the world’s biggest football clubs, affecting its ability to invest in players and infrastructure.  
-**What happens next:** Not specified in the article.  
-**Sources:** BBC News – https://www.bbc.co.uk/sport/football/articles/c5evwlmdmy00o?at_medium=RSS&at_campaign=rss  
+**What happened:** The head of the RAF has told the BBC that the United Kingdom now faces “unprecedented threats” from adversaries operating in space. In response, a new unit has been created to protect Britain’s own satellites, reportedly by jamming signals from foreign spacecraft.
 
-# BUSINESS
-*(No stories placed here after deduplication; the selected top stories do not include any from this subcategory.)*  
+**Key details:**  
+- New dedicated space‑defence unit established by the RAF.  
+- UK is actively jamming other nations’ satellite communications for defensive purposes.  
+- Threat assessment cites growing hostile activity in orbit.
 
-# ENTERTAINMENT
-*(No stories placed here after deduplication; the selected top stories do not include any from this subcategory.)*
+**Why it matters:** This marks a significant shift in UK defence posture, acknowledging space as a combat domain and signalling a move toward active counter‑measures to safeguard critical satellite assets used for communications, navigation and intelligence.
+
+**What happens next:** The unit is expected to become operational in the coming months, with further details on its capabilities and legal framework likely to be released as the UK refines its space‑defence strategy.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c32l8y8kygdvo?at_medium=RSS&at_campaign=rss
+
+### Harvey Weinstein sentenced to 15 years for sexual assault
+
+**What happened:** Former film producer Harvey Weinstein was handed a 15‑year prison sentence after being convicted of sexual assault. The sentencing followed emotional testimony from victims, including former production assistant Miriam Haley.
+
+**Key details:**  
+- 15‑year prison term imposed by New York court.  
+- Convictions stemmed from multiple counts of rape and sexual assault.  
+- Victim Miriam Haley described the assault as having a “devastating effect on my life and sense of security that may never go away.”
+
+**Why it matters:** The sentence underscores the ongoing legal accountability for high‑profile figures accused of sexual misconduct and reinforces the #MeToo movement’s impact on the justice system.
+
+**What happens next:** Weinstein is expected to appeal the conviction and sentence; the case may continue to influence discussions on consent and power dynamics in the entertainment industry.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cm98626n260yo?at_medium=RSS&at_campaign=rss
+
+# UK
+## Politics & Government
+
+### Iran’s president tells Trump the Islamic Republic will never “bend the knee”
+
+**What happened:** Iranian President Masoud Pezeshkian delivered a defiant speech at the United Nations, declaring that Iran will never “bend the knee” to pressure from the United States.
+
+**Key details:**  
+- Speech delivered at UN General Assembly.  
+- Remarks were a direct response to President Donald Trump’s threat to “annihilate” Iran if a peace deal is not agreed soon.  
+- Pezeshkian’s stance signals continued Iranian resistance to US demands over its nuclear programme and regional policies.
+
+**Why it matters:** The exchange highlights heightened diplomatic tension between Washington and Tehran, raising the risk of escalation in a region already fraught with conflict.
+
+**What happens next:** The rhetoric is likely to complicate ongoing diplomatic efforts and could influence upcoming negotiations or sanctions discussions.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss
+
+### UK to review Chagos Islands deal over lack of US support
+
+**What happened:** Defence Secretary Wes Streeting confirmed that the United Kingdom will reassess the 2022 agreement to hand the Chagos Islands to Mauritius, citing insufficient support from the United States.
+
+**Key details:**  
+- Review announced after US President Donald Trump described the deal as “terrible” to Andy Burnham.  
+- The 2022 agreement transferred sovereignty of the Chagos archipelago to Mauritius, with the UK retaining military bases on the surrounding islands.  
+- Streeting said the lack of US backing raises concerns about the strategic value of the arrangement.
+
+**Why it matters:** The potential renegotiation could affect UK‑US defence cooperation, regional stability in the Indian Ocean, and Mauritius’s long‑standing claim to the territory.
+
+**What happens next:** The review will likely involve legal, diplomatic and security assessments, with outcomes expected to influence future UK‑Mauritius relations and US strategic planning.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/ck3wjy3pdwdno?at_medium=RSS&at_campaign=rss
+
+### Trump and Xi meet on US soil – what’s at stake?
+
+**What happened:** US President Donald Trump and Chinese President Xi Jinping held a high‑level meeting in Washington, D.C., to discuss a range of bilateral issues.
+
+**Key details:**  
+- Agenda included trade negotiations, technology transfer, Taiwan, and geopolitical tensions.  
+- Both leaders signalled a willingness to de‑escalate certain disputes while maintaining competitive stances in others.  
+- The meeting was framed as a “reset” in the often‑strained US‑China relationship.
+
+**Why it matters:** The summit could reshape global trade flows, technology standards, and security dynamics, affecting economies worldwide and the balance of power in the Indo‑Pacific region.
+
+**What happens next:** Follow‑up talks and policy announcements are expected in the coming weeks, with both sides monitoring compliance and progress.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/videos/c38xk275jd21o?at_medium=RSS&at_campaign=rss
+
+## Public Safety
+
+### Devoted mother and three children die in Bootle fire
+
+**What happened:** Elisha Brabin, 36, and her children – Leo (16), Ellis (8) and Prudence (7) – were killed in a house fire in Bootle on Tuesday.
+
+**Key details:**  
+- Fire broke out at a residential property in Bootle, Merseyside.  
+- All four victims were pronounced dead at the scene.  
+- Local community and emergency services have appealed for information to help determine the cause.
+
+**Why it matters:** The tragedy highlights the ongoing risk of domestic fires and the need for improved fire safety measures and rapid emergency response.
+
+**What happens next:** A formal investigation into the fire’s cause is underway, and support services are being offered to the wider community.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/ckpq03g8940po?at_medium=RSS&at_campaign=rss
+
+### Many UK hydrants lack sufficient flow for firefighting
+
+**What happened:** Fire chiefs across the United Kingdom have warned that a significant number of fire hydrants do not provide the water flow needed for effective firefighting operations.
+
+**Key details:**  
+- Inspections reveal inadequate water pressure and volume in numerous hydrants.  
+- Fire crews report that the shortfall “affects their ability” to respond to incidents, especially large‑scale fires.  
+- The issue spans both urban and rural areas, prompting calls for urgent infrastructure upgrades.
+
+**Why it matters:** Insufficient hydrant performance can jeopardise public safety, hinder emergency response times, and increase the risk of property loss and casualties.
+
+**What happens next:** Authorities are being urged to prioritise refurbishment and replacement programmes to bring hydrant systems up to required standards.
+
+**Sources:** BBC UK – https://www.bbc.co.uk/news/articles/cjg49w0v300lo?at_medium=RSS&at_campaign=rss
+
+# WORLD
+## Europe
+
+### Europe’s car makers face crisis – could war rescue them?
+
+**What happened:** Auto executives across Europe say the industry is in a deep crisis, but many are pinning hopes on increased defence spending and rearmament to revive demand.
+
+**Key details:**  
+- Transition to electric vehicles, supply‑chain disruptions and competition from Asian manufacturers have strained European OEMs.  
+- Executives argue that a surge in defence contracts – for vehicles, trucks and specialised equipment – could provide a much‑needed boost.  
+- The prospect of heightened geopolitical tension is seen as a double‑edged sword: risk of conflict but also opportunity for industrial growth.
+
+**Why it matters:** The health of Europe’s automotive sector has far‑reaching implications for jobs, trade balances and the continent’s strategic autonomy.
+
+**What happens next:** Policymakers are weighing how to balance civilian and defence production, while car makers prepare for potential shifts in government procurement priorities.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&at_campaign=rss
+
+## North America
+
+### Singer Michael Kiwanuka reveals he is recovering from a stroke
+
+**What happened:** Award‑winning British‑born singer Michael Kiwanuka announced that he has suffered a “quite severe” stroke and is now undergoing rehabilitation.
+
+**Key details:**  
+- Kiwanuka, known for his soulful voice and acclaimed albums, disclosed the health crisis on social media.  
+- He described the experience as a “tough journey ahead” with a long road to recovery.  
+- Medical professionals have not released detailed prognoses, but early indications suggest a significant but manageable brain injury.
+
+**Why it matters:** The news underscores that stroke can affect individuals of all ages and highlights the importance of rapid medical attention and public awareness of neurological health.
+
+**What happens next:** Kiwanuka plans to return to music once his health permits, though a precise timeline remains uncertain.
+
+**Sources:** BBC News – https://www.bbc.co.uk/news/articles/cmvgy4yydj1do?at_medium=RSS&at_campaign=rss
 
 ---
 

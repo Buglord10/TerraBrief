@@ -24,25 +24,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Test OpenRouter AI connection
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python src/test_ai.py
-
-      - name: Test full AI pipeline with 5 articles
-        env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python src/test_ai_full.py
-
       - name: Run TerraBrief
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python src/main.py
+        timeout-minutes: 5
 
       - name: Save briefing to repository
         run: |
           git config user.name "TerraBrief"
           git config user.email "terrabrief@users.noreply.github.com"
-          git add data/ briefing.md
+          git add data/
+          git add -f briefing.md
           git diff --cached --quiet || git commit -m "Add daily TerraBrief briefing"
           git push

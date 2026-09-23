@@ -35,9 +35,6 @@ sources:
   - name: Microsoft
     url: https://blogs.microsoft.com/feed/
 
-  - name: Microsoft AI
-    url: https://blogs.microsoft.com/ai/feed/
-
   - name: Google
     url: https://blog.google/rss/
 
@@ -50,21 +47,9 @@ sources:
   - name: OpenAI
     url: https://openai.com/news/rss.xml
 
-  - name: Anthropic
-    url: https://www.anthropic.com/news/rss.xml
-
   # Space and science
   - name: NASA Breaking News
     url: https://www.nasa.gov/rss/dyn/breaking_news.rss
-
-  - name: NASA JPL
-    url: https://www.jpl.nasa.gov/feeds/news/
-
-  - name: ESA
-    url: https://www.esa.int/rssfeed
-
-  - name: Scientific American
-    url: https://rss.sciam.com/ScientificAmerican-Global
 
   - name: New Scientist Space
     url: https://www.newscientist.com/subject/space/feed/
@@ -89,7 +74,3 @@ sources:
 
   - name: Eurogamer
     url: https://www.eurogamer.net/feed
-
-  # Eurovision and entertainment
-  - name: Eurovision
-    url: https://eurovision.tv/rss

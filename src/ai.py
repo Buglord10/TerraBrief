@@ -3,8 +3,6 @@ import requests
 
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-
-# Free model router
 MODEL = "openrouter/free"
 
 
@@ -50,16 +48,13 @@ For each:
 
 **Why it matters:** Explain the significance without exaggeration.
 
-**What happens next:** Only include this when supported by the supplied
-articles.
+**What happens next:** Only include this when supported by the supplied articles.
 
 **Sources:** List the relevant source names and URLs.
 
-Then organise the rest of the briefing using these categories and
-subcategories:
+Then organise the rest of the briefing using these categories and subcategories:
 
 # UK
-
 ## Politics & Government
 ## Economy
 ## Transport
@@ -67,7 +62,6 @@ subcategories:
 ## Public Safety
 
 # WORLD
-
 ## Europe
 ## North America
 ## Middle East
@@ -76,7 +70,6 @@ subcategories:
 ## International Organisations
 
 # TECHNOLOGY
-
 ## Artificial Intelligence
 ## Microsoft
 ## Apple
@@ -86,7 +79,6 @@ subcategories:
 ## Cybersecurity
 
 # AVIATION
-
 ## Airlines
 ## Aircraft
 ## Airports
@@ -94,7 +86,6 @@ subcategories:
 ## Aviation Industry
 
 # FORMULA 1
-
 ## Race Weekend
 ## Teams
 ## Drivers
@@ -102,7 +93,6 @@ subcategories:
 ## F1 Business
 
 # GAMING
-
 ## Minecraft
 ## Xbox
 ## PlayStation
@@ -111,7 +101,6 @@ subcategories:
 ## Releases
 
 # SCIENCE
-
 ## Space
 ## Physics
 ## Biology
@@ -119,14 +108,12 @@ subcategories:
 ## Environment
 
 # BUSINESS
-
 ## Markets
 ## Companies
 ## Finance
 ## Energy
 
 # ENTERTAINMENT
-
 ## Film & TV
 ## Music
 ## Eurovision
@@ -151,20 +138,17 @@ For each significant story use:
 
 Do not write a generic conclusion.
 
-The final briefing should feel like a professional morning intelligence
-briefing rather than a simple list of RSS articles.
+The final briefing should feel like a professional morning intelligence briefing rather than a simple list of RSS articles.
 """
 
 
 def generate_briefing(articles):
-
     if not articles:
         return "No relevant articles were found."
 
     article_text = ""
 
     for article in articles:
-
         article_text += f"""
 CATEGORY: {article.get('category', 'Unknown')}
 SUBCATEGORY: {article.get('subcategory', 'Unknown')}
@@ -200,12 +184,7 @@ Here are today's articles:
         },
         json={
             "model": MODEL,
-            "messages": [
-                {
-                    "role": "user",
-                    "content": prompt
-                }
-            ],
+            "messages": [{"role": "user", "content": prompt}],
             "temperature": 0.2,
             "max_tokens": 12000
         },
@@ -223,6 +202,4 @@ Here are today's articles:
     try:
         return data["choices"][0]["message"]["content"]
     except (KeyError, IndexError, TypeError):
-        raise RuntimeError(
-            f"Unexpected OpenRouter response:\n{data}"
-        )
+        raise RuntimeError(f"Unexpected OpenRouter response:\n{data}")

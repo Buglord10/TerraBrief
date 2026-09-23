@@ -1,20 +1,18 @@
 name: TerraBrief Morning Briefing
 
 on:
-
   workflow_dispatch:
-
   schedule:
     - cron: "0 6 * * *"
 
+permissions:
+  contents: write
+
 jobs:
-
   briefing:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Download TerraBrief
         uses: actions/checkout@v4
 
@@ -27,4 +25,14 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run TerraBrief
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python src/main.py
+
+      - name: Save briefing to repository
+        run: |
+          git config user.name "TerraBrief"
+          git config user.email "terrabrief@users.noreply.github.com"
+          git add data/ briefing.md
+          git diff --cached --quiet || git commit -m "Add daily TerraBrief briefing"
+          git push

@@ -1,6 +1,6 @@
 # TerraBrief
 
-**Date:** 2026-10-25
+**Date:** 2026-10-26
 
 ---
 
@@ -8,146 +8,135 @@
 
 ## TOP STORIES  
 
-### 1. Meghan broke contact with father in letter citing abuse claims  
-**What happened:** Sources close to the duchess said she warned her father last year that he would never meet his grandchildren, following claims of abuse.  
-**Key details:** Meghan Markle; father Thomas Markle; abuse claims; letter sent last year; no contact since.  
-**Why it matters:** Highlights an ongoing rift within the royal family and has implications for public perception of the monarchy.  
-**What happens next:** No further developments indicated in the article.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/cqzjxg7l19yxo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/cqzjxg7l19yxo?at_medium=RSS&at_campaign=rss)  
+### **Serbian veteran ruler Vučić concedes defeat after student‑led protest victory**  
+**What happened:** Populist right‑wing leader Aleksandar Vučić lost the presidential election to a student‑led protest movement, ending 12 years of his rule.  
 
-### 2. Musk says SpaceX restricted Ukraine's Starlink connection as service restored  
-**What happened:** Tech billionaire Elon Musk accused Ukraine of violating Starlink’s terms of service by using the network for military activity; service was subsequently restored.  
-**Key details:** SpaceX; Ukraine; Starlink; terms‑of‑service violation; military use; restoration of service.  
-**Why it matters:** Raises questions about commercial satellite‑internet use in conflict zones and the role of tech firms in warfare.  
-**What happens next:** Not specified; possible further restrictions or negotiations.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss)  
+**Key details:**  
+- Election framed as a referendum on Serbia’s future; Vučić said his party has “lost the vote.”  
+- Students have dismantled 14 years of Vučić’s political dominance in under two years.  
+- Celebrations erupted across Serbia following the result.  
 
-### 3. Burnham open to ‘honest discussion’ on EU free movement  
-**What happened:** Mayor of Greater Manchester (referred to as “the PM” in the article) said he wants a “factual” and “evidence‑based debate” about returning to free movement between Britain and Europe.  
-**Key details:** Burnham ( mayor); EU free movement; desire for a factual debate.  
-**Why it matters:** Reflects the post‑Brexit political discourse on UK‑EU relations and could influence future policy.  
-**What happens next:** Not specified; likely continued discussion among policymakers.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c8e36kyk1qx5o?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c8e36kyk1qx5o?at_medium=RSS&at_campaign=rss)  
+**Why it matters:** Marks a major shift in Serbian politics, potentially altering foreign policy direction and domestic governance; demonstrates the growing power of youth‑led movements.  
 
-### 4. Four ways Labour could raise money in the Budget without hiking income tax  
-**What happened:** BBC Verify examined options Chancellor John Healey may need to raise money to boost fiscal headroom, including cutting waste and reforming benefits.  
-**Key details:** Chancellor John Healey; fiscal headroom; possible measures without income‑tax increases.  
-**Why it matters:** Important for the upcoming Budget and will affect public services and taxation policy.  
-**What happens next:** Chancellor to set out Budget plans; implementation of chosen options likely.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c65yn9p55np2o?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c65yn9p55np2o?at_medium=RSS&at_campaign=rss)  
+**What happens next:** Not specified in the articles.  
 
-### 5. Israel to close West Bank crossings on election day as crackdown escalates  
-**What happened:** Israeli Defense Forces announced restrictions on the movement of Palestinian workers in the run‑up to Tuesday’s election.  
-**Key details:** Israeli Defense Forces; West Bank closures; election day; movement restrictions for Palestinian workers.  
-**Why it matters:** Impacts Palestinian workers and reflects heightened security ahead of the election.  
-**What happens next:** Restrictions to remain in place during the election period.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss)  
+**Sources:**  
+- BBC News – *Celebrations in Serbia after veteran ruler Vučić loses election to student‑led protest movement* – https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo  
+- BBC News – *How a movement of students brought down Serbia's Vučić* – https://www.bbc.co.uk/news/articles/c574pvy82k0mo  
 
-### 6. What is PHP and why did it spark a global cyber‑security scramble?  
-**What happened:** AI uncovered long‑hidden programming flaws in PHP, triggering a rare global cyber‑security response; websites were taken offline.  
-**Key details:** PHP programming language; critical vulnerabilities; global response; websites affected.  
-**Why it matters:** Highlights weaknesses in a widely used web language and has broad implications for internet security.  
-**What happens next:** Developers and companies working to patch flaws; updates expected.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss)  
+---
 
-### 7. UK to invest £100m in ‘world first’ AI Biosecurity Lab  
-**What happened:** The chancellor will unveil AI spending aimed at shoring up the UK’s defences in Wednesday’s Budget; funding for a new AI Biosecurity Lab.  
-**Key details:** £100 million investment; AI Biosecurity Lab; UK defences; Budget announcement.  
-**Why it matters:** Demonstrates government focus on AI‑driven security and could set a precedent for biosecurity research.  
-**What happens next:** Lab to be established; further details of its operation to follow.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss)  
+### **Israel heads to polls in one of the most pivotal elections in its history**  
+**What happened:** Israeli voters are preparing to cast ballots in a highly anticipated general election where security and democracy are central issues.  
 
-### 8. Moment of jeopardy as King embarks on Caribbean tour  
-**What happened:** The meticulously‑planned visit takes in three countries in nine days but is not without jeopardy.  
-**Key details:** King’s tour; three countries; nine‑day schedule; potential risks/security concerns.  
-**Why it matters:** A high‑profile royal tour with geopolitical significance; tests the King’s reign early in his role.  
-**What happens next:** Tour to proceed; possible adjustments based on the identified jeopardy.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/ckzd6gvg1r2jo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/ckzd6gvg1r2jo?at_medium=RSS&at_campaign=rss)  
+**Key details:**  
+- Security and democratic values are highlighted as the main themes of the campaign.  
+- Middle East correspondent Lucy Williamson is reporting on the election’s significance.  
 
+**Why it matters:** The outcome will shape Israel’s domestic policy, regional security posture, and could influence peace negotiations; the election is seen as a decisive moment for the country’s future.  
 
+**What happens next:** The election will take place, after which coalition negotiations will determine the governing coalition.  
+
+**Sources:**  
+- BBC News – *Israelis prepare to vote in one of the most pivotal elections in the country's history* – https://www.bbc.co.uk/news/videos/c64g1wje3jjwo  
+
+---
+
+### **Healey’s Budget aims to shield low‑income pensioners from income tax and sustain a stronger economy**  
+**What happened:** Chancellor Rachel Healey announced budget measures to prevent the rising flat‑rate state pension from becoming liable for income tax, while also seeking to keep the economy on a stronger footing amid upcoming challenges.  
+
+**Key details:**  
+- Changes are required so the state pension, which rises in April, will not be subject to income tax.  
+- The economic outlook is currently positive, but the government warns that conditions may become “trickier” in January.  
+- Healey emphasises the need to “sustain the stronger economy through gathering clouds.”  
+
+**Why it matters:** Protects vulnerable retirees from an unexpected tax burden and signals the Labour government’s fiscal strategy; the budget will influence public finances and social stability.  
+
+**What happens next:** The Budget will be presented to Parliament; further details on implementation and the January economic outlook are expected.  
+
+**Sources:**  
+- BBC News – *Healey to shield low-income pensioners from income tax in the Budget* – https://www.bbc.co.uk/news/articles/ck98zp7zeq65o  
+- BBC News – *Healey's Budget needs to sustain the stronger economy through gathering clouds* – https://www.bbc.co.uk/news/articles/ck87z4ng2l03o  
+
+---
+
+### **Global cyber‑security warning after discovery of critical PHP vulnerabilities and 500 new government vulnerabilities**  
+**What happened:** Developers of the PHP programming language disclosed critical vulnerabilities, prompting a worldwide cyber‑security scramble; an AI minister warned that 500 new vulnerabilities have been found in government systems.  
+
+**Key details:**  
+- Websites were taken offline after the PHP flaws were revealed.  
+- Amazon reported it had experienced attacks before the warning was made public.  
+- The AI minister’s briefing highlighted “500 new vulnerabilities” across government networks.  
+- The incident has been described as “the cyber equivalent of an unexploded bomb.”  
+
+**Why it matters:** PHP underpins many online services; the vulnerabilities could expose countless users and critical infrastructure to attack, raising the risk for governments and businesses worldwide.  
+
+**What happens next:** Patches and updates are expected to be deployed; continued monitoring and possible legislative actions are anticipated.  
+
+**Sources:**  
+- BBC News – *Race to update services' computer systems after cyber‑security flaw found* – https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o  
+- BBC News – *‘500 new vulnerabilities’ found in government, says AI minister* – https://www.bbc.co.uk/news/videos/c6y8lvg2p50po  
+- BBC News – *UK working to identify exposure after global cyber‑security warning* – https://www.bbc.co.uk/news/articles/cmx23d0k57d3o  
+- BBC Technology – *Zoe Kleinman: PHP is the cyber equivalent of an unexploded bomb* – https://www.bbc.co.uk/news/articles/cw98z6qlyvg3o  
+- BBC News – *What is PHP and why did it spark a global cyber‑security scramble?* – https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o  
+
+---
+
+### **UK to invest £100 million in world‑first AI biosecurity laboratory**  
+**What happened:** The upcoming Budget will allocate £100 million for a new AI‑driven biosecurity laboratory, described as a “world first,” to strengthen the UK’s defences against biological threats.  
+
+**Key details:**  
+- Funding is part of a broader AI spending package announced by the Chancellor.  
+- The laboratory will focus on detecting, analysing, and responding to bio‑security risks using artificial intelligence.  
+
+**Why it matters:** Enhances the UK’s capacity to protect public health and national security from biological hazards, positioning the country as a leader in AI‑enabled biosecurity.  
+
+**What happens next:** The laboratory will be established; further details on location, staffing, and operational timeline are expected.  
+
+**Sources:**  
+- BBC Technology – *UK to invest £100m in 'world first' AI Biosecurity Lab* – https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo  
+
+---
+
+### **Storm Boelo brings flooding, flight disruptions and power cuts across the UK**  
+**What happened:** Severe weather from Storm Boelo caused flooding in Largs, Scotland; a passenger plane veered off the runway at Birmingham Airport; parts of Northern Ireland experienced power outages.  
+
+**Key details:**  
+- A yellow wind warning was issued for north‑west UK; strong winds and heavy rain affected large parts of Scotland.  
+- Flooding was observed in the town centre of Largs, a coastal town west of Glasgow.  
+- The plane left the runway briefly due to high winds; no injuries were reported.  
+- Electricity was fully restored to Northern Ireland after the storm.  
+
+**Why it matters:** Highlights the increasing frequency of extreme weather events, testing transport safety, infrastructure resilience, and emergency response capabilities.  
+
+**What happens next:** The Met Office will continue issuing yellow weather warnings; recovery and cleanup operations are ongoing.  
+
+**Sources:**  
+- BBC News – *Storm Boelo floods town centre of Largs, Scotland* – https://www.bbc.co.uk/news/videos/c977pkdjm0z8o  
+- BBC News – *Plane veers off runway at Birmingham Airport* – https://www.bbc.co.uk/news/videos/cmd6dw17ejjxo  
+- BBC News – *Electricity restored to all of NI after storm* – https://www.bbc.co.uk/news/articles/cqe9lykm93jmo  
+- BBC Weather – *Storm clears but more wind and rain bears down on UK* – https://www.bbc.co.uk/weather/articles/cqwy7w8dryrxo  
+- BBC News – *In pictures: A trail of destruction across Scotland* – https://www.bbc.co.uk/news/articles/cmewe8ndn1q4o  
+
+---
+
+### **Lula triumphs in Brazil election but faces hostile Congress and polarized nation**  
+**What happened:** Former president Luiz Inácio Lula da Silva won a surprise election victory, ending the incumbent’s term, but will lead a country with a hostile Congress and deep political polarization.  
+
+**Key details:**  
+- Lula’s win was described as a surprise; he will assume the presidency amid a fragmented legislature.  
+- The political environment is highly divided, suggesting challenging governance ahead.  
+
+**Why it matters:** Determines the policy direction for Brazil, affecting domestic reforms, social programs, and international relations; a polarized Congress may impede legislative progress.  
+
+**What happens next:** Lula will take office and confront legislative battles; the composition of his government and policy agenda will be closely watched.  
+
+**Sources:**  
+- BBC News – *Lula faces hostile congress and divided country after Brazil election win* – https://www.bbc.co.uk/news/articles/cmvg7p001qj9o  
 
 ---  
 
-## UK  
-
-### Politics & Government  
-
-**Foster care saved her life**  
-**What happened:** A woman says fostering “saved her life” as a campaign launches to tackle a shortage of carers.  
-**Key details:** Woman who entered foster care at 14; campaign to increase foster carers.  
-**Why it matters:** Highlights the impact of foster care and the urgent need for more carers in the UK.  
-**What happens next:** Campaign to recruit more foster carers; potential policy changes.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c687zjr7r5wvo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c687zjr7r5wvo?at_medium=RSS&at_campaign=rss)  
-
-**Plan for Northern Olympics to get £7m in Healey’s Budget**  
-**What happened:** The full feasibility study will look in detail at how hosting the Games in northern England could work.  
-**Key details:** Northern England; £7 million funding; feasibility study for hosting the Games.  
-**Why it matters:** Could boost regional development and bring international sport to the North of England.  
-**What happens next:** Feasibility study to be completed; potential bid for hosting rights.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/cv98z92ekg9zo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/cv98z92ekg9zo?at_medium=RSS&at_campaign=rss)  
-
-**Budget to include £1bn for social and affordable housing**  
-**What happened:** The move will take funding for the 10‑year programme to more than £40 billion.  
-**Key details:** £1 billion additional funding; 10‑year social‑housing programme; total now over £40 bn.  
-**Why it matters:** Addresses the housing shortage and could improve affordability for many households.  
-**What happens next:** Programme to expand with new funding; local authorities to allocate resources.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o?at_medium=RSS&at_campaign=rss)  
-
-**Habitat destroyed by Cairngorms fire to be restored with government funding**  
-**What happened:** The funding will also support habitat, species and river restoration, control of invasive non‑native species and deer management across Scotland.  
-**Key details:** Cairngorms fire; government funding for restoration; habitat, species, river work; invasive‑species control; deer management.  
-**Why it matters:** Aids recovery of a protected landscape and supports biodiversity.  
-**What happens next:** Restoration projects to be implemented; monitoring of ecological recovery.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/cmqlnkwnlv6po?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/cmqlnkwnlv6po?at_medium=RSS&at_campaign=rss)  
-
-### Economy  
-
-*(No remaining stories fit the subcategory after top‑story filtering.)*  
-
-### Transport  
-
-*(No remaining stories fit the subcategory after top‑story filtering.)*  
-
-### Education  
-
-*(No remaining stories fit the subcategory after top‑story filtering.)*  
-
-### Public Safety  
-
-**Reward offered over murder in flat used as brothel**  
-**What happened:** Jinming Zhang had been stabbed multiple times before he was found on 9 February 2022; a reward is now offered for information.  
-**Key details:** Murder victim Jinming Zhang; flat used as brothel; reward for information.  
-**Why it matters:** Highlights crime in residential premises and the need for community vigilance.  
-**What happens next:** Police appeal for information; investigation ongoing.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c615j787ee82o?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c615j787ee82o?at_medium=RSS&at_campaign=rss)  
-
-
-
----  
-
-## WORLD  
-
-### Europe  
-
-**Almost 1,000 arrested as clashes follow another day of mass protests across France**  
-**What happened:** Hundreds of thousands took part in demonstrations in France, with protests also in other European countries; nearly 1,000 arrests.  
-**Key details:** France; mass protests; nearly 1,000 arrests; European solidarity protests.  
-**Why it matters:** Reflects widespread discontent and the scale of political activism in Europe.  
-**What happens next:** Protests may continue; government response under scrutiny.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss)  
-
-### North America  
-
-**Who are the candidates in Brazil’s presidential election?**  
-**What happened:** Voters in Sunday’s election are choosing between two very different candidates, as Americas correspondent Ione Wells reports from Rio de Janeiro.  
-**Key details:** Brazil presidential election; candidates; reporting from Rio de Janeiro.  
-**Why it matters:** Determines the direction of Brazil’s policy and its role in regional politics.  
-**What happens next:** Election result to shape domestic and foreign policy.  
-**Sources:** BBC News – [https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss](https://www.bbc.co.uk/news/videos/cm0e0del4jewo?at_medium=RSS&at_campaign=rss)  
-
-**Voters in Brazil to choose between Lula and Bolsonaro’s son**  
-**What happened:** Flávio Bolsonaro, the son of Brazil’s imprisoned former president, is presenting a strong challenge to Lula, 80, who is seeking a fourth term.  
-**Key details:** Flávio Bolsonaro; L
+*All information above is drawn exclusively from the supplied BBC articles.*
 
 ---
 
